@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="ca">
-
 <head>
     <meta charset="UTF-8">
     <title>Llista d'alumnes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estils.css">
 </head>
-
-<input type="text" id="search" onkeyup="filtrar()" placeholder="Cerca alumne...">
-
-<script src="script.js"></script>
 
 <body>
 
+<div class="container">
+
     <h1>Llista d'alumnes</h1>
 
-    <table border="1" id="taula">
+    <input 
+        type="text" 
+        id="search" 
+        onkeyup="filtrar()" 
+        placeholder="Cerca alumne..."
+    >
+
+    <table id="taula">
         <tr>
             <th>Nom</th>
             <th>Edat</th>
@@ -27,7 +31,9 @@
 
     </table>
 
+</div>
+
+<script src="data.js"></script>
+
 </body>
-
-
 </html>
